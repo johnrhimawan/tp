@@ -21,7 +21,7 @@ public class Position {
     public final String positionName;
 
     /**
-     * Constructs a {@code Name}.
+     * Constructs a {@code Position}.
      *
      * @param position Name of position being applied to.
      */
