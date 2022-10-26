@@ -30,8 +30,6 @@ public class InternshipBuilder {
     public static final String DEFAULT_PHONE = "85355255";
     public static final String DEFAULT_EMAIL = "amy@gmail.com";
     public static final String DEFAULT_WEBSITE = "https://careers.shopee.sg/";
-    public static final Task DEFAULT_TASK = new Task("Application submitted",
-            LocalDateTime.now().truncatedTo(ChronoUnit.MINUTES).format(Task.FORMATTER));
     public static final String DEFAULT_REMARK = "";
 
     private Name name;
@@ -55,7 +53,6 @@ public class InternshipBuilder {
         email = new Email(DEFAULT_EMAIL);
         website = new Website(DEFAULT_WEBSITE);
         tasks = new ArrayList<>();
-        tasks.add(DEFAULT_TASK);
         tags = new HashSet<>();
         remark = new Remark(DEFAULT_REMARK);
     }

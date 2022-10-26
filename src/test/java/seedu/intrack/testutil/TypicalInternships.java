@@ -76,7 +76,7 @@ public class TypicalInternships {
     public static final Internship MSFT = new InternshipBuilder().withName(VALID_NAME_MSFT)
             .withPosition(VALID_POSITION_MSFT).withStatus(VALID_STATUS_MSFT).withPhone(VALID_PHONE_MSFT)
             .withEmail(VALID_EMAIL_MSFT).withWebsite(VALID_WEBSITE_MSFT)
-            .withTasks(VALID_TASK_MSFT).withTags(VALID_TAG_REMOTE, VALID_TAG_URGENT).build();
+            .withTags(VALID_TAG_REMOTE, VALID_TAG_URGENT).build();
 
     public static final String KEYWORD_MATCHING_MEIER = "Meier"; // A keyword that matches MEIER
 
