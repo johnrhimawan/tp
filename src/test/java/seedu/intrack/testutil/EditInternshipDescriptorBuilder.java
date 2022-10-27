@@ -38,6 +38,7 @@ public class EditInternshipDescriptorBuilder {
         descriptor.setEmail(internship.getEmail());
         descriptor.setSalary(internship.getSalary());
         descriptor.setWebsite(internship.getWebsite());
+        descriptor.setTasks(internship.getTasks());
         descriptor.setTags(internship.getTags());
     }
 

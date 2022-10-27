@@ -125,6 +125,7 @@ public class EditCommand extends Command {
         private Email email;
         private Salary salary;
         private Website website;
+        private List<Task> tasks;
         private Set<Tag> tags;
 
         public EditInternshipDescriptor() {}
@@ -139,6 +140,7 @@ public class EditCommand extends Command {
             setEmail(toCopy.email);
             setWebsite(toCopy.website);
             setSalary(toCopy.salary);
+            setTasks(toCopy.tasks);
             setTags(toCopy.tags);
         }
 
@@ -187,6 +189,14 @@ public class EditCommand extends Command {
 
         public Optional<Website> getWebsite() {
             return Optional.ofNullable(website);
+        }
+
+        public void setTasks(List<Task> tasks) {
+            this.tasks = tasks;
+        }
+
+        public Optional<List<Task>> getTasks() {
+            return (tasks != null) ? Optional.of(Collections.unmodifiableList(tasks)) : Optional.empty();
         }
 
         /**
